@@ -22,6 +22,6 @@ class ShoppingMall {
 
   void showTotal() {
     // 장바구니에 담은 상품의 총 가격 출력하기
-    print('showTotal 호출됨');
+    print('장바구니에 $totalPrice원 어치를 담으셨네요 ! ');
   }
 }
