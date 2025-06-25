@@ -1,8 +1,9 @@
 import 'dart:io';
 
-import 'package:dart_shoppingmall/dart_shoppingmall.dart' as dart_shoppingmall;
+import 'package:dart_shoppingmall/shopping_mall.dart';
 
 void main(List<String> arguments) {
+  ShoppingMall mall = ShoppingMall();
   while (true) {
     print('-' * 92);
     print(
@@ -12,14 +13,12 @@ void main(List<String> arguments) {
     // 사용자 입력 받기
     String? userInput = stdin.readLineSync();
     if (userInput == '1') {
-      // TODO 사용자가 입력한 값이 1이라면 상품 목록 출력하기
-      print('상품 목록 출력하기');
+      mall.showProducts();
     } else if (userInput == '2') {
-      // TODO 사용자 입력 값이 2라면 장바구니에 담기
+      mall.addToCart();
       print('장바구니에 담기');
     } else if (userInput == '3') {
-      // TODO 사용자 입력 값이 3이라면 장바구니 가격 출력
-      print('장바구니에 담긴 상품의 총 가격 보기');
+      mall.showTotal();
     } else if (userInput == '4') {
       // 사용자 입력 값이 4라면 종료
       print('프로그램 종료');
