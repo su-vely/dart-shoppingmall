@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:dart_shoppingmall/shopping_mall.dart';
 
 void main(List<String> arguments) {
@@ -21,7 +20,7 @@ void main(List<String> arguments) {
       mall.showTotal();
     } else if (userInput == '4') {
       // 사용자 입력 값이 4라면 종료
-      print('프로그램 종료');
+      print('이용해 주셔서 감사합니다 ~ 안녕히 가세요 !');
       return;
     } else {
       print('올바른 입력값이 아닙니다');
